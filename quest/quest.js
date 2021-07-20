@@ -53,4 +53,9 @@ choiceForm.addEventListener('submit', e =>{
     //update UX per users choice
     questDesc.textContent = choiceData.result;
     choiceForm.classList.add('hidden');
+    const backBtn = document.createElement('a');
+    backBtn.textContent = '-Go Back to Map';
+    backBtn.href = '../map';
+
+    questDesc.append(backBtn);
 });
