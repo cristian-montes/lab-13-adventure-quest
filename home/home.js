@@ -1,13 +1,17 @@
 // import functions and grab DOM elements
-const userInfoform = document.getElementById('form-userInf');
+import { createUser } from './create-user.js';
+import { setUser } from '../data/data-utils.js';
+
+const userInfoform = document.getElementById('form-userInfo');
 
 
 //event listener for form and
 userInfoform.addEventListener('submit', e => {
     e.preventDefault();
-    // const formData = new FormData(userInfoform);
+    const formData = new FormData(userInfoform);
+    const newUser = createUser(formData);
+    setUser(newUser);
+    window.location.replace('./map');
+
 });
 
-    // create new user from the result above
-    //set the new user information to the localStorage
-    // send user to the map page to play
