@@ -7,7 +7,7 @@ test('createUser Function ', (expect) => {
     // Set up your arguments and expectations
     const expected = {
         hp:0,
-        dogecoin: 35,
+        dogecoin: 0,
         name: 'carlos',
         race: 'wizard',
         completed: {}
