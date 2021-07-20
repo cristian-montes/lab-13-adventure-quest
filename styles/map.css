@@ -1,0 +1,4 @@
+#quest-options {
+    display: flex;
+    flex-direction: column;
+}
