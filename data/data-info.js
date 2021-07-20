@@ -1,146 +1,126 @@
-const monsters = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
+const tacos = {
+    id: 'tacos',
+    title: 'La Taqueria',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'tacos.jpeg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        You enter La Taqueria to find out they have any kind of tacos you want.BUT you Broke! What do you do?
     `,
     choices: [{
         id: 'negotiate',
         description: 'Negotiate with them',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            The Taqueria owner is known for being a great, exellent human being. He understands your situation and instead of getting mad at you for not having any means to paying him.Instead he offers you a job washing dishes. He feeds you everyday you help him and also gives you 25 dogecoins.
         `,
         hp: 0,
-        gold: 35
+        dogecoin: 25
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+            You migh be broke,but you are a good fighter and kicked the taqueria's owner butt. You leave happy because of the free meal. However, the taqueria's owner gave you some good pushes as well. This gave -15 hp damge, BUT were able to steal 20 dogecoins from him.
         `,
-        hp: -30,
-        gold: 50
+        hp: -15,
+        dogecoin: 20
     }, {
         id: 'run',
-        description: 'Run away like good Sir Robin',
+        description: 'Run away like a chicken',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            As you make your way down the street and far enough away from la Taqueria, you start feeling dizzy, weak and confused. This causes you -70 hp damage and need to the ER -150 dogecoins.         
         `,
-        hp: -50,
-        gold: 0
+        hp: -70,
+        dogecoin: -150
     }]
 };
 
-const dragon = {
-    id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
+const unicorn = {
+    id: 'unicorn',
+    title: 'The MAGIC Unicorn',
     map: {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
+    image: 'unicorn.jpeg',
+    // audio: 'dragon.wav',
+    // action: 'dragon-growl.aiff',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        Your little sibling facetimes you crying to let you know that some bad inviduals stole the magic unicorn. As you walk by the ally, you see some bad inviduals with the stole magic unicorn. what's your next move?
     `,
     choices: [{
-        id: 'run',
-        description: 'Get the hell out of the village',
+        id: 'pictures',
+        description: 'Take pictures to show the police',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            Because of you were a coward and not brave at all to go kick some bootie, the bad dudes got away and took the unicorn to africa. This caused your little sibling being sad for very long time causing -1000 and -1200 dogecoins because you had to buy another magic unicorn from far far away.
         `,
-        hp: -35,
-        gold: 15
+        hp: -1000,
+        dogecoin: -1200
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
         result: `
+            Your braveness and precession made the bad people surrondered. Because of this you were able to get the magic unicor back and obtained extra 50 dogecoins the bad invduals possed.
+
+
             You attempt to charge towards the dragon, who sees you approach
             and let's loose a fireball. You wake up the next morning and the
             village has been completely burned to the ground.
             Oh, and you take 45 hp damage.
         `,
-        hp: -45,
-        gold: 0
-    }, {
-        id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
-        result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
-        `,
         hp: 0,
-        gold: 90
+        dogecoin: 50
+    }, {
+        id: 'scream',
+        description: 'Scream for help for others to assist you',
+        result: `
+            Thanks to you screaming for help for others to assit you the bad people ran away since they were riding the magic unicorn. This caused you -20 hp damage for being silly and not brave at all. But some people felt bad and gave you  15 dogecoins to buy a new unicorn.
+        `,
+        hp: -20,
+        dogecoin: 15,
     }]
 };
 
-const treasure = {
-    id: 'treasure',
-    title: 'A Golden Treasure',
+const happyEnding = {
+    id: 'happyEnding',
+    title: 'A Happy Ending',
     map: {
         top: '31%',
         left: '5%'
     },
-    prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
+    prerequisites: ['tacos', 'unicorn'],
+    image: 'happyEnding.jpeg',
+    // audio: 'treasure-chests.wav',
+    // action: 'chest-opening.wav',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        Finally you get to a great bar where you meet a very interesting, well dressed, but super humble invidual. As the night goes the invidual gets really confortable with you he wants to give you 3 options to pick from to see if you are a good person.
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
-        result: 'You grab 40 gold pieces!',
+        id: 'fight',
+        description: 'Find someone at the bar you would like to fight',
+        result: 'He does not like fighting and he is not interested on helping you anymore',
         hp: 0,
-        gold: 40
+        dogecoin: -10
     }, {
-        id: 'golden',
-        description: 'A Golden Chest',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
-        hp: -50,
-        gold: 0
-    }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
-        result: 'A warm light engulfs you and you gain 35 hp',
+        id: 'negotiate',
+        description: 'Talk to someone at the bar and sell them you car at higher market value',
+        result: 'He is super inpressed with your people and negotiating skills and decides to take you to work for him at spacio equis',
         hp: 35,
-        gold: 0
+        dogecoin:1000
+    }, {
+        id: 'drinks',
+        description: 'Drink as much as you want',
+        result: 'You drink too much and you get funnier and funnier the more you drink. The invidual is very impressed with how much you can drink and with your clown skill. Unfortunally, that is not good since he wants someone that has auto control',
+        hp: 10,
+        dogecoin: 0
     }]
 };
 
 const quests = [
-    monsters, 
-    treasure,
-    dragon,
+    tacos, 
+    unicorn,
+    happyEnding,
 ];
 
 export default quests;

@@ -3,7 +3,7 @@ export function createUser(formData){
     const newUser = {
         name: formData.get('name'),
         race: formData.get('race'),
-        gold: 35,
+        dogecoin: 35,
         hp: 0,
         completed: {}
     };
