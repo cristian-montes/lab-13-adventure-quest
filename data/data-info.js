@@ -2,8 +2,8 @@ const tacos = {
     id: 'tacos',
     title: 'La Taqueria',
     map: {
-        top: '89%',
-        left: '44%'
+        top: '77%',
+        left: '70%'
     },
     image: 'tacos.jpeg',
     description: `
@@ -40,7 +40,7 @@ const unicorn = {
     id: 'unicorn',
     title: 'The MAGIC Unicorn',
     map: {
-        top: '17%',
+        top: '57%',
         left: '37%'
     },
     image: 'unicorn.jpeg',
@@ -80,8 +80,8 @@ const happyEnding = {
     id: 'happyEnding',
     title: 'A Happy Ending',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '105%',
+        left: '45%'
     },
     prerequisites: ['tacos', 'unicorn'],
     image: 'happyEnding.jpeg',

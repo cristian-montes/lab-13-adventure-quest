@@ -5,10 +5,13 @@
     background-image: url('../assets/map.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30%;
-    height: 30%;
-    padding: 300px;
-    margin-left: 370px;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    /* margin: auto; */
+    /* width: 30%;
+    /* height: 30%;
+    padding: 300px;*/
+    margin-left: 370px; 
 }
 
 .hidden {
@@ -20,4 +23,20 @@ header p{
     font-weight: bolder;
     color:steelblue;
     text-align: center;
+}
+
+
+.aligment {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.aligment.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.aligment.completed:after {
+    content: ' ✔';
 }
