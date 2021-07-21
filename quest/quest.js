@@ -47,7 +47,7 @@ choiceForm.addEventListener('submit', e =>{
     const userData = getUser();
     userData.dogecoin += choiceData.dogecoin;
     userData.hp += choiceData.hp;
-    userData.completed[quests.id] = true;
+    userData.completed[questFindItem.id] = true;
     setUser(userData);
 
     //update UX per users choice

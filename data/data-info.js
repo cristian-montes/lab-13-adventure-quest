@@ -29,10 +29,10 @@ const tacos = {
         id: 'run',
         description: 'Run away like a chicken',
         result: `
-            As you make your way down the street and far enough away from la Taqueria, you start feeling dizzy, weak and confused. This causes you -70 hp damage and need to the ER -150 dogecoins.         
+            As you make your way down the street and far enough away from la Taqueria, you start feeling dizzy, weak and confused. But after sitting down for a couple of minutes you feel like a champa because you didnt pull the trigger and you got better conditionfor running.This gives you 30 hp and need to the ER  0 dogecoins.         
         `,
-        hp: -70,
-        dogecoin: -150
+        hp: 15,
+        dogecoin: 0
     }]
 };
 
@@ -61,23 +61,17 @@ const unicorn = {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
         result: `
-            Your braveness and precession made the bad people surrondered. Because of this you were able to get the magic unicor back and obtained extra 50 dogecoins the bad invduals possed.
-
-
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
+            Your braveness and precession made the bad people surrondered. Because of this you were able to get the magic unicor back and obtained extra 50 dogecoins the bad invduals possed gain extra muscles for using your moves... 50 hp.
         `,
-        hp: 0,
+        hp: 50,
         dogecoin: 50
     }, {
         id: 'scream',
         description: 'Scream for help for others to assist you',
         result: `
-            Thanks to you screaming for help for others to assit you the bad people ran away since they were riding the magic unicorn. This caused you -20 hp damage for being silly and not brave at all. But some people felt bad and gave you  15 dogecoins to buy a new unicorn.
+            Thanks to you screaming for help for others to assit you the bad people ran away since they were riding the magic unicorn. You were silly and not brave at all. But some people felt bad and gave you  15 dogecoins to buy a new unicorn.
         `,
-        hp: -20,
+        hp: 0,
         dogecoin: 15,
     }]
 };

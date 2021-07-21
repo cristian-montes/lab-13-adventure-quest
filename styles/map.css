@@ -1,8 +1,23 @@
 #quest-options {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction:column;
+    background-image: url('../assets/map.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 30%;
+    padding: 300px;
+    margin-left: 370px;
 }
 
 .hidden {
     display: none;
+}
+
+header p{
+    font-size: 40px;
+    font-weight: bolder;
+    color:steelblue;
+    text-align: center;
 }

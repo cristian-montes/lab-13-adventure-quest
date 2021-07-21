@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>HOME</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            The Game!!!
+        <div>
+            <p>The Game!</p>
         </div>
     </header>
     <main>
@@ -26,32 +26,32 @@
             <form id="form-userInfo">
                 <!-- name -->
                 <label for="name">
-                    Name
+                     <span id="raio-names">Name</span>
                     <input type="text" name="name">
-                </label>
-                <!-- wizard -->
+                </label><br>
+                <!-- Ninja -->
                 <label for="race">
-                    Ninja
-                    <input type="radio" name="race" id="ninja" value="wizard">
-                </label>
-                <!-- dwarf -->
+                  <span id="raio-names"> Ninja</span>
+                    <input type="radio" name="race" id="ninja" value="ninja">
+                </label> <br>
+                <!-- Mario -->
                 <label for="race">
-                    Mario
-                    <input type="radio" name="race" id="mario" value="dwarf">
-                </label>
-                <!-- elf -->
+                    <span id="raio-names">Mario</span>
+                    <input type="radio" name="race" id="mario" value="mario">
+                </label><br>
+                <!-- minion -->
                 <label for="race">
-                    minion
-                    <input type="radio" name="race" id="minion" value="elf">
-                </label>
+                    <span id="raio-names">minion</span>
+                    <input type="radio" name="race" id="minion" value="minion">
+                </label><br>
                 <!-- button -->
-                <button type="submit">Begin Game</button>
+                <button  id="home-submitBtn" type="submit">Begin Game</button>
             </form>
 
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; Cristiano's Games</div>
     </footer>
 
     <script type="module" src="./home/home.js"></script>
