@@ -1,0 +1,45 @@
+#quest-title {
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#results-div{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#quest-image{
+    width: 30%;
+    height: 40%;
+    margin-left: 700px;
+}
+
+
+#quest-description{
+    text-align: center;
+    font-size: 30px;
+}
+
+#choices{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#myChoiceBtn{
+
+text-align: center;
+
+}
+
+#back-btn{
+    background-color: aqua;
+    font-weight: bolder;
+    color:lightslategrey;
+}
+
+.hidden {
+    display:none;
+}

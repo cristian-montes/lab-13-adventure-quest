@@ -1,0 +1,31 @@
+#div-header {
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#results-div{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#results-div img{
+    width: 30%;
+    height: 40%;
+}
+
+#results-div p{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+#back-btn{
+    background-color: aqua;
+    font-weight: bolder;
+    color:lightslategrey;
+}
+
+.hidden {
+    display:none;
+}

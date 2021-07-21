@@ -19,7 +19,8 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
+    background-image: url('../assets/home-background.jpeg');
 }
 
 main {
@@ -47,10 +48,16 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+}
+
+header p{
+    font-size: 40px;
+    font-weight: bolder;
+    color: snow;
 }
 
 footer {
@@ -62,8 +69,9 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
+    color: snow;
 }
 
 .gutter-right {

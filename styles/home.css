@@ -1,1 +1,11 @@
-/* add home page styles here */
+#raio-names{
+    font-size: 40px;
+    color: snow;
+}
+
+#home-submitBtn{
+    background-color: red;
+    font-size: 20px;
+    color: snow;
+    border-radius: 30%;
+}
